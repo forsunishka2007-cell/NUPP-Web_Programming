@@ -1,34 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-    <title>Завдання 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./image/nature1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 90%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.7;
+            transform: translateY(0);
+            
+            transition: all 0.6s ease-in-out;
+        }
+
+        table:hover {
+            opacity: 1;
+            transform: translateY(-15px); 
+            
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), 
+                        0 0 50px rgba(0, 212, 255, 0.3);
+            border-color: #00d4ff;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #eee;
+            color: #333;
+        }
+
+        th {
+            background-color: #e6f2ff;
+            color: #0056b3;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        td[rowspan] {
+            background-color: #f0f8ff;
+            font-weight: bold;
+            color: #0056b3;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            text-align: center;
+        }
+
+        td:nth-child(3), td:nth-child(4) {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        tbody tr:hover td {
+            background-color: #f9fcff;
+            transition: background 0.3s;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                opacity: 1;
+            }
+            th, td {
+                padding: 10px 5px;
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <table border="1" cellspacing="0" cellpadding="5">
-        <tr>
-            <th colspan="2" rowspan="2"></th>
-            <th colspan="2">Характеристики</th>
-        </tr>
-        <tr>
-            <th>Кількість студентів</th>
-            <th>Якість успішності</th>
-        </tr>
-        <tr>
-            <td rowspan="3"><b>Спеціальність</b></td>
-            <td>Комп’ютерна інженерія</td>
-            <td align="center">250</td>
-            <td align="center">80%</td>
-        </tr>
-        <tr>
-            <td>Телекомунікації та радіотехніка</td>
-            <td align="center">200</td>
-            <td align="center">75%</td>
-        </tr>
-        <tr>
-            <td>Електромеханіка</td>
-            <td align="center">150</td>
-            <td align="center">85%</td>
-        </tr>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2" rowspan="2">Статистика навчання</th>
+                <th colspan="2">Характеристики</th>
+            </tr>
+            <tr>
+                <th>Кількість студентів</th>
+                <th>Якість успішності</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Спеціальність</td>
+                <td>Комп’ютерна інженерія</td>
+                <td>250</td>
+                <td>80%</td>
+            </tr>
+            <tr>
+                <td>Телекомунікації та радіотехніка</td>
+                <td>200</td>
+                <td>75%</td>
+            </tr>
+            <tr>
+                <td>Електромеханіка</td>
+                <td>150</td>
+                <td>85%</td>
+            </tr>
+        </tbody>
     </table>
+
 </body>
 </html>

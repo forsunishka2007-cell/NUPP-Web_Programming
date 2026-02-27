@@ -1,22 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Завдання 3</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./image/starry-night-foggy-mountain_104785-345.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0;
+            width: 500px;
+            height: 300px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            
+            opacity: 0.7;
+            transform: translateY(0);
+            transition: all 0.6s ease-in-out;
+        }
+
+        table:hover {
+            opacity: 1;
+            transform: translateY(-15px);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), 
+                        0 0 50px rgba(0, 212, 255, 0.3);
+            border-color: #00d4ff;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #eee;
+            color: #333;
+            font-weight: 500;
+        }
+
+        td[colspan], td[rowspan] {
+            background-color: #f0f8ff;
+            color: #0056b3;
+        }
+
+        td:hover {
+            background-color: #e6f2ff;
+            transition: background 0.3s;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                width: 95%;
+                height: auto;
+                opacity: 1;
+            }
+            td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <table border="1" width="400" height="300" align="center">
+
+    <table>
         <tr>
-            <td colspan="2" align="center" valign="middle">Об'єднано 2 стовпці</td>
+            <td colspan="2">Об'єднано 2 стовпці</td>
             <td>Звичайна</td>
         </tr>
         <tr>
-            <td rowspan="2" align="center" valign="middle">Об'єднано 2 рядки</td>
+            <td rowspan="2">Об'єднано 2 рядки</td>
             <td>Дані 1</td>
             <td>Дані 2</td>
         </tr>
         <tr>
-            <td colspan="2" align="center" valign="middle">Нижній блок</td>
+            <td colspan="2">Нижній блок</td>
         </tr>
-        </table>
+    </table>
+
 </body>
 </html>
