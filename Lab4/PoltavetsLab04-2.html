@@ -3,22 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: black;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        div.marquee-container {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 10px;
+            background: rgba(255,255,255,0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        marquee {
+            font-size: 1.2rem;
+            color: #2a52be;
+            font-weight: bold;
+        }
+
+        div.marquee-container:hover {
+            background: rgb(195, 148, 148);
+            transition: 0.5s ease;
+        }
+    </style>
 </head>
 <body>
-<div>
+    <h1 style="text-align:center; color:#ffffff;">Task 2</h1>
+
+<div class="marquee-container">
 <marquee behavior="alternate">Текст, що коливається з боку в бік</marquee>
 </div>
-<div>
-<marquee direction="left">Текст, що біжить справа наліво</marquee>
+<div class="marquee-container">
+<marquee direction="left" scrollamount="2000">Текст, що біжить справа наліво</marquee>
 </div>
-<div>
+<div class="marquee-container">
 <marquee direction="right" behavior="slide">Текст, що біжить зліва направо та зупиняється</marquee>
 </div>
-<div >
+<div class="marquee-container">
 <marquee scrolldelay="100">Текст з запізненням 100мс</marquee>
 </div>
-<div>
+<div class="marquee-container">
 <marquee scrolldelay="200">Текст з запізненням 200мс</marquee>
 </div>
 </body>

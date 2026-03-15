@@ -1,0 +1,31 @@
+
+body {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('../images/marble-elegance-stockcake.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: rgb(255, 255, 255);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 24px;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+.section-title {
+    display: block;
+    margin-bottom: 200px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(34, 255, 0);
+}

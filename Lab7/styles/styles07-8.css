@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background: #fdfdfd;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+section {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px) rotate(2deg);
+}
+
+
+h2 {
+    color: #2d5a27;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.main-list > li {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #4a7c44;
+    margin-top: 15px;
+}
+
+.explain {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.explain li {
+    font-size: 0.9rem;
+    color: #000000;
+    font-weight: normal; 
+    margin-bottom: 2px;
+}
+
+.explain li b {
+    color: #333;
+}
+
+.food-list {
+    list-style-type: circle;
+    padding-left: 25px;
+    color: #555;
+}
+
+.food-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}

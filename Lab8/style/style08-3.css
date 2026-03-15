@@ -1,0 +1,81 @@
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    padding: 40px 60px;
+    border: 2px solid #0fa;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+    box-shadow: 
+        0 0 5px #0fa,
+        inset 0 0 5px #0fa;
+    
+    animation: neon-flicker 4s infinite alternate;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #0fa,
+        0 0 20px #0fa;
+}
+
+a::before {
+    content: "✉";
+    margin-right: 20px;
+    transition: transform 1.3s ease;
+}
+
+
+p:hover {
+    box-shadow: 
+        0 0 10px #0fa,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        inset 0 0 15px #0fa;
+    transform: scale(1.02);
+}
+
+p:hover a {
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        0 0 60px #0fa,
+        0 0 100px #0fa;
+    letter-spacing: 2px;
+}
+
+p:hover a::before {
+    transform: scale(1.2) rotate(30deg);
+}
+
+@keyframes neon-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+    20%, 22%, 24%, 55% {
+        opacity: 0.9;
+        filter: brightness(0.8);
+    }
+}

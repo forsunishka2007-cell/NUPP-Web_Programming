@@ -1,0 +1,29 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+    background: #f4f7f4; 
+    padding: 50px; 
+}
+ul.garden-list { 
+    list-style: none; 
+    padding: 0; 
+}
+ul.garden-list > li { 
+    background: white; 
+    margin-bottom: 15px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border-left: 5px solid #81b29a; 
+}
+.category { 
+    font-weight: 700; 
+    font-size: 1.1rem; 
+    display: block; 
+    margin-bottom: 10px; 
+    color: #3d405b; 
+}
+ul.sub-list { 
+    list-style-type: "🌸 ";
+    padding-left: 20px; 
+}
+
+

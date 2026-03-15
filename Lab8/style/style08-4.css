@@ -1,0 +1,99 @@
+/* Основні налаштування сторінки */
+body {
+    background-color: #f4f7f6; /* Світлий, приємний для очей фон */
+    color: #333;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Верхня навігаційна таблиця */
+table[width="100%"] {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-collapse: collapse;
+}
+
+table[width="100%"] td {
+    padding: 15px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+table[width="100%"] a {
+    text-decoration: none;
+    color: #007bff; /* Класичний синій колір для посилань */
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Красивий ефект при наведенні на пункт меню */
+table[width="100%"] td:hover {
+    background-color: #e9ecef;
+}
+
+table[width="100%"] a:hover {
+    color: #0056b3;
+}
+
+/* Відступ для перевірки якоря */
+div {
+    height: 800px;
+}
+
+/* Заголовок розкладу */
+h2 {
+    color: #dc3545; /* Стриманий червоний згідно з завданням */
+    margin-top: 50px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Якір "Понеділок" */
+a[name="ПН"] {
+    display: inline-block;
+    color: #007bff;
+    font-size: 22px;
+    margin: 20px 0;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-left: 4px solid #007bff; /* Акцентна лінія збоку */
+    background: #fff;
+}
+
+/* Плавне підсвічування при переході */
+a[name="ПН"]:target {
+    animation: highlight 2s ease-out;
+}
+
+@keyframes highlight {
+    0% { background-color: #fff; }
+    30% { background-color: #fff3cd; } /* Легкий жовтий спалах */
+    100% { background-color: #fff; }
+}
+
+/* Основна таблиця розкладу */
+table:last-of-type {
+    width: 75%; /* Згідно з завданням */
+    background: #fff;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+table:last-of-type td {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    text-align: center;
+}
