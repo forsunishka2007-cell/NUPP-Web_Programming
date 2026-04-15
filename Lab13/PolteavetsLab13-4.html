@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Елітний Сад — Багаторічні Квіти</title>
+    <style>
+        *{
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #fcfaf7; 
+            background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                              url('https://images.unsplash.com/photo-1508784411316-02b8cd4d3a3a?auto=format&fit=crop&w=1920&q=80');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin: 40px 0;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: darkred;
+            font-size: 35pt;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .navigation {
+            background: #f9f4f4;
+            padding: 20px;
+            border-left: 5px solid darkred;
+            margin-bottom: 40px;
+        }
+
+        .navigation h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+
+        .navigation a:hover {
+            color: darkred;
+        }
+
+        .flower-card {
+            margin-bottom: 60px;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .flower-name {
+            color: purple;
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .flower-desc {
+            color: black;
+            font-style: italic;
+            font-size: 14pt;
+            text-indent: 2%;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .flower-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 10pt;
+            color: #888;
+            text-decoration: none;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .back-link:hover {
+            color: purple;
+        }
+
+        @keyframes pulse {
+            0% { 
+                opacity: 0.4; 
+                transform: translateY(10px); 
+            }
+            50% { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+            100% { 
+                opacity: 0.4; 
+                transform: translateY(10px); 
+            }
+        }
+
+        .flower-card:nth-of-type(1) { animation-delay: 0s; }
+        .flower-card:nth-of-type(2) { animation-delay: 1.5s; }
+        .flower-card:nth-of-type(3) { animation-delay: 3s; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a name="top"></a>
+        <h1>Енциклопедія Садових Квітів</h1>
+
+        <div class="navigation">
+            <h3>Зміст:</h3>
+            <ul>
+                <li><a href="#rose">✦ Вишукана Троянда</a></li>
+                <li><a href="#lavender">✦ Гірська Лаванда</a></li>
+                <li><a href="#peony">✦ Пишна Півонія</a></li>
+            </ul>
+        </div>
+
+        <div class="flower-card">
+            <a name="rose"></a>
+            <div class="flower-name">Троянда (Rosa)</div>
+            <img src="./images/rose.jpg" alt="Троянда" class="flower-img">
+            <p class="flower-desc">
+                Троянда по праву вважається королевою будь-якого саду. Ця багаторічна рослина налічує тисячі сортів, що відрізняються формою пелюсток та інтенсивністю аромату. Вона символізує красу та витонченість, вимагаючи при цьому ретельного догляду та родючого ґрунту для свого розкішного цвітіння протягом усього літа.
+            </p>
+            <a href="#top" class="back-link">↑ Повернутися до змісту</a>
+        </div>
+
+        <div class="flower-card">
+            <a name="lavender"></a>
+            <div class="flower-name">Лаванда (Lavandula)</div>
+            <img src="./images/lavander.jpg" alt="Лаванда" class="flower-img">
+            <p class="flower-desc">
+                Лаванда — це вічнозелений багаторічний чагарник, який цінується за свій неповторний заспокійливий аромат та елегантні фіолетові суцвіття. Вона ідеально підходить для створення бордюрів та альпійських гірок, адже є досить невибагливою до поливу та обожнює сонячні, відкриті простори.
+            </p>
+            <a href="#top" class="back-link">↑ Повернутися до змісту</a>
+        </div>
+
+        <div class="flower-card">
+            <a name="peony"></a>
+            <div class="flower-name">Півонія (Paeonia)</div>
+            <img src="./images/paeonia.jpg" alt="Півонія" class="flower-img">
+            <p class="flower-desc">
+                Півонії — одні з найулюбленіших весняних багаторічників. Їхні величезні, махрові квіти можуть досягати 20 сантиметрів у діаметрі. Рослина має міцне коріння, що дозволяє їй рости на одному місці понад 50 років. Це символ достатку та процвітання, який наповнює сад солодким ароматом наприкінці травня.
+            </p>
+            <a href="#top" class="back-link">↑ Повернутися до змісту</a>
+        </div>
+    </div>
+
+</body>
+</html>
