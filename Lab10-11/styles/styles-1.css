@@ -1,0 +1,92 @@
+body {
+        font-family: 'Inter', -apple-system, sans-serif;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin: 0;
+        color: #2d3748;
+    }
+
+    form {
+        background: #ffffff;
+        max-width: 650px;
+        width: 100%;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e2e8f0;
+        box-sizing: border-box;
+        opacity: 0.75;
+        transition: 0.3s ease;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        color: #1a202c;
+        border-bottom: 2px solid #edf2f7;
+        padding-bottom: 12px;
+        text-align: center;
+    }
+
+    pre {
+        font-family: inherit;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        line-height: 1.6;
+    }
+
+    input[type="text"], select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0 16px 0;
+        border: 1px solid #cbd5e0;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        flex: 1;
+        min-width: 140px; 
+        padding: 12px;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+        transition: background 0.2s;
+    }
+
+    input[type="submit"] { background-color: #3182ce; color: white; }
+    input[type="reset"] { background-color: #edf2f7; color: #4a5568; }
+
+    form:hover {
+        opacity: 0.9;
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.792);
+        transform: rotate(1deg);
+    }
+
+    @media (max-width: 480px) {
+        body {
+            padding: 10px;
+        }
+        
+        form {
+            padding: 15px;
+        }
+
+        .button-group {
+            flex-direction: column; 
+        }
+
+        input[type="submit"], input[type="reset"] {
+            width: 100%;
+        }
+    }

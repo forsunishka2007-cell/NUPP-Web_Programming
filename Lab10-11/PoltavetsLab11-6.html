@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 6</title>
+    <link rel="stylesheet" href="styles/styles-6.css">
+</head>
+<body>
+    <form action="thanks.html">
+    <h2>Розширена анкета</h2>
+    Прізвище: <input type="text" name="s"> Ім'я: <input type="text" name="n">
+    Поштовий індекс (6 цифр): <input type="text" name="zip" maxlength="6" size="6">
+    Е-адреса: <input type="text" name="email">
+
+    <p>Держава: 
+        <select name="country">
+            <option>Україна</option><option>Італія</option><option>Польща</option>
+            <option>Німеччина</option><option>Франція</option><option>Іспанія</option>
+            <option>Чехія</option><option>Литва</option><option>Латвія</option><option>Естонія</option>
+        </select>
+    </p>
+
+    <p>Місце проживання:<br>
+        <input type="radio" name="loc" value="1"> Кременчук 
+        <input type="radio" name="loc" value="2"> Полтава
+        <input type="radio" name="loc" value="11"> інше
+    </p>
+
+    <p>Захоплення (оберіть декілька):<br>
+        <input type="checkbox" name="h1"> Програмування
+        <input type="checkbox" name="h2"> Важка атлетика
+        </p>
+
+    <p>Володіння мовами: 
+        <input type="checkbox"> Українська <input type="checkbox"> Англійська 
+        <input type="checkbox"> Італійська <input type="checkbox"> Німецька <input type="checkbox"> Польська
+    </p>
+
+    <div class="button-group">
+        <input type="submit" value="ВІДПРАВИТИ">
+    </div>
+</form>
+</body>
+</html>

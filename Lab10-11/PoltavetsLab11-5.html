@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 5</title>
+    <link rel="stylesheet" href="styles/styles-5.css">
+</head>
+<body>
+    <form action="thanks.html">
+    <h2>Анкета студента</h2>
+    Прізвище та ім'я: <input type="text" name="full_name">
+    Код доступу до анкети: <input type="password" name="access_code">
+    
+    <p>Чи зручно вам навчатися дистанційно? 
+        <input type="checkbox" name="dist" value="yes"> Так
+        <input type="checkbox" name="dist" value="no"> Ні
+    </p>
+
+    <p>Ваша оцінка курсу: 
+        <input type="radio" name="rate" value="5"> Відмінно
+        <input type="radio" name="rate" value="4"> Добре
+    </p>
+
+    <p>Ваші пропозиції:<br>
+    <textarea name="feedback" rows="5"></textarea></p>
+    
+    <div class="button-group">
+        <input type="submit" value="ЗБЕРЕГТИ">
+        <input type="reset" value="ОЧИСТИТИ">
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</form>
+</body>
+</html>

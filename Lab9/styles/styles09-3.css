@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif; text-align: center; 
+    background: #f0f4f8; 
+}
+
+.city-map {
+    border: 5px solid white; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); 
+}

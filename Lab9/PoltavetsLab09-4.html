@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>4</title>
+    <link rel="stylesheet" href="./styles/styles09-4.css">
+</head>
+<body>
+    <h2>Інтерактивні геометричні фігури</h2>
+    
+    <map name="geoMap">
+        <area shape="rect" coords="468,68,792,276" href="https://uk.wikipedia.org/wiki/Прямокутник" target="_blank" title="Це прямокутник">
+        <area shape="circle" coords="628,528,140" href="https://uk.wikipedia.org/wiki/Коло" target="_blank" title="Це коло">
+        <area shape="poly" coords="1061,388,904,652,1219,650" href="https://uk.wikipedia.org/wiki/Трикутник" target="_blank" title="Це трикутник">
+        <area shape="poly" coords="923,9,1030,87,1142,20,1099,138,1207,224,1072,231,1022,346,984,227,853,218,955,139" href="https://uk.wikipedia.org/wiki/Зірка" title="Це зірка" target="_blank">
+        <area shape="rect" coords="77,409,329,658" title="Це квадрат" href="https://uk.wikipedia.org/wiki/Квадрат" target="_blank">
+        <area shape="circle" coords="200,168,178" title="Це овал" href="https://uk.wikipedia.org/wiki/Овал" target="_blank">
+    </map>
+
+    <img src="./images/shapes.jpg" usemap="#geoMap" width="600" alt="Геометричні фігури">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>

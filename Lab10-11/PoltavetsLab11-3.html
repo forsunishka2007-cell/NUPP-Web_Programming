@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3</title>
+    <link rel="stylesheet" href="styles/styles3.css">
+</head>
+<body>
+
+<form action="thanks.html" method="get">
+    <h2>Завдання 11-3: Анкетування користувача</h2>
+
+    <div class="form-group">
+        <label>Прізвище та ім'я:</label>
+        <input type="text" name="fio" placeholder="Артем ..." required>
+    </div>
+
+    <div class="form-group">
+        <label>Електронна пошта:</label>
+        <input type="text" name="email" placeholder="example@mail.com">
+    </div>
+
+    <div class="form-group">
+        <label>Ваша стать:</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="male" id="m" checked> 
+            <label for="m" class="inline-label">Чоловіча</label>
+            <input type="radio" name="gender" value="female" id="f"> 
+            <label for="f" class="inline-label">Жіноча</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Ваша спеціальність:</label>
+        <select name="specialty">
+            <option value="f7" selected>Комп'ютерна інженерія (F7)</option>
+            <option value="it">Інформаційні технології</option>
+            <option value="cyber">Кібербезпека</option>
+            <option value="other">Інше</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Якими мовами програмування володієте:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" name="lang" value="html" checked> <span class="inline-label">HTML/CSS</span>
+            <input type="checkbox" name="lang" value="js"> <span class="inline-label">JavaScript</span>
+            <input type="checkbox" name="lang" value="python"> <span class="inline-label">Python</span>
+            <input type="checkbox" name="lang" value="node"> <span class="inline-label">Node.js</span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Додаткова інформація про себе:</label>
+        <textarea name="bio" rows="4" placeholder="Напишіть про свої досягнення у спорті чи навчанні..."></textarea>
+    </div>
+
+    <div class="button-group">
+        <input type="submit" value="Відправити анкету">
+        <input type="reset" value="Очистити">
+    </div>
+</form>
+
+</body>
+</html>

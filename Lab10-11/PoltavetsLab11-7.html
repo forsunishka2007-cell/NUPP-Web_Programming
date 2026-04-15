@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 7</title>
+    <link rel="stylesheet" href="styles/styles-7.css">
+</head>
+<body>
+    <form action="thanks.html">
+    <h2>Форма реєстрації на клуб інтересів</h2>
+    Прізвище: <input type="text" name="surname">
+    Ім'я: <input type="text" name="name">
+    Пароль: <input type="password" name="p">
+
+    <p>Стать: 
+        <input type="radio" name="gen" value="m"> Чол
+        <input type="radio" name="gen" value="f"> Жін
+    </p>
+
+    <p>Ваш вік: 
+        <input type="radio" name="age" value="1"> 18-25
+        <input type="radio" name="age" value="2"> 26-40
+        <input type="radio" name="age" value="3"> 40+
+    </p>
+
+    <p>Тематика (Ctrl+клік для вибору декількох):<br>
+        <select name="themes" multiple size="5">
+            <option>IT-технології</option><option>Класика</option>
+            <option>Детективи</option><option>Фентезі</option>
+            <option>Манга/Аніме</option><option>Історія</option>
+            <option>Фізика</option><option>Психологія</option>
+            <option>Мистецтво</option><option>Спорт</option>
+        </select>
+    </p>
+
+    <p>Що зараз читаєте?<br>
+    <textarea name="now_reading" rows="3"></textarea></p>
+
+    <div class="button-group">
+        <input type="submit" value="ВІДІСЛАТИ">
+        <input type="reset" value="ВИДАЛИТИ">
+    </div>
+</form>
+</body>
+</html>

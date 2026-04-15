@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>5</title>
+    <link rel="stylesheet" href="./styles/styles09-5.css">
+</head>
+<body>
+    <h2>Сенсорна карта довільної форми (Човен)</h2>
+
+    <div class="content-wrapper">
+        <map name="polyMap">
+            <area shape="poly" coords="732,308,846,440,355,572,187,469,165,438,498,303" 
+                  href="#" title="Це Човен" alt="Човен">
+        </map>
+
+        <img src="./images/boat.jpg" usemap="#polyMap" width="500" id="boat-img" class="interactive-img">
+    </div>
+
+    <p class="hint">Якщо не працює — наведіть на центр човна. Підказка має з'явитися.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 1</title>
+    <link rel="stylesheet" href="./styles/styles-1.css">
+</head>
+<body>
+    <form action="thanks.html" target="_blank">
+        <h2>Форма студента</h2>
+        <pre>
+Ваше ім'я: <input name="name" type="text" maxlength="40" size="40" value="Артем">
+Ваша стать: <input type="radio" name="pol" value="male" checked>Чоловіча <input type="radio" name="pol" value="female">Жіноча
+
+На якому курсі Ви навчаєтесь?
+<select name="curs" size="1">
+    <option value="1">Перший</option>
+    <option value="2" selected>Другий</option>
+    <option value="3">Третій</option>
+    <option value="4">Четвертий</option>
+    <option value="5">П'ятий</option>
+</select>
+
+Які дисципліни ви вивчаєте на курсі?
+<input type="checkbox" name="web" value="yes" checked> WEB-програмування
+<input type="checkbox" name="comp_eng" value="yes"> Комп'ютерна інженерія
+<input type="checkbox" name="networks" value="yes"> Комп'ютерні мережі
+
+Напишіть декілька слів про себе:
+        </pre>
+        <textarea name="about" rows="6" cols="60" wrap="off">Я студент Полтавської політехніки, захоплююсь веб-розробкою та важкою атлетикою.</textarea>
+        <p>
+            <input type="submit" value="Відіслати дані">
+            <input type="reset" value="Очистити форму">
+            <input type="file" name="friend" size="50">
+        </p>
+    </form>
+</body>
+</html>

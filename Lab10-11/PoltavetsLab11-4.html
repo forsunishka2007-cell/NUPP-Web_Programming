@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 4</title>
+    <link rel="stylesheet" href="styles/styles-4.css">
+</head>
+<body>
+
+<form action="thanks.html" method="get">
+    <h2>Замовлення товару</h2>
+
+    <div class="form-group">
+        <label>Номер банківського рахунку:</label>
+        <input type="text" name="bank_account" placeholder="UA00 0000 0000..." required>
+    </div>
+
+    <div class="form-group">
+        <label>Особистий номер (PIN):</label>
+        <input type="password" name="user_pin" maxlength="4" placeholder="****" required>
+    </div>
+
+    <div class="form-group">
+        <label>Оберіть товари (Ctrl + клік):</label>
+        <select name="products" multiple size="4">
+            <option value="cpu">Процесор Intel Core i9</option>
+            <option value="gpu">Відеокарта RTX 4090</option>
+            <option value="ram">Оперативна пам'ять 32GB</option>
+            <option value="ssd">Накопичувач NVMe 2TB</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <p>Вид оплати:</p>
+        <input type="radio" name="payment_type" value="cash" id="p1"> 
+        <label for="p1" class="inline">Готівковий</label>
+        <br>
+        <input type="radio" name="payment_type" value="card" id="p2" checked> 
+        <label for="p2" class="inline">Безготівковий розрахунок</label>
+    </div>
+
+    <div class="form-group">
+        <p>Бажаю одержати при відповіді:</p>
+        <input type="checkbox" name="extra_balance" id="c1"> 
+        <label for="c1" class="inline">Дані про залишки на рахунку</label>
+        <br>
+        <input type="checkbox" name="extra_history" id="c2"> 
+        <label for="c2" class="inline">Список останніх виплат по рахунку</label>
+    </div>
+
+    <div class="form-group">
+        <label>Довільні коментарі:</label>
+        <textarea name="user_comments" rows="3" placeholder="Ваші побажання до замовлення..."></textarea>
+    </div>
+
+    <div class="button-group">
+        <input type="submit" value="ПІДТВЕРДИТИ ЗАМОВЛЕННЯ" onclick="playFutureClick()">
+        <input type="reset" value="Скинути">
+    </div>
+</form>
+
+</body>
+</html>

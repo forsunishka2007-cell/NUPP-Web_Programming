@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles09-1.css">
+</head>
+<body>
+
+    <h2>JUST RELAX</h2>
+
+    <div class="image-container">
+    <div class="map-wrapper">
+        <div class="area-highlight"></div>
+        
+        <img src="./images/waterfall.jpg" width="300" height="260" usemap="#map1" alt="Водоспад">
+        
+        <map name="map1">
+            <area shape="rect" coords="1072,255,1394,1240" href="./pages/Primerlab05_1.html" 
+                  title="Водоспад" alt="Водоспад"
+                  onmouseover="document.body.classList.add('waterfall-active')"
+                  onmouseout="document.body.classList.remove('waterfall-active')">
+        </map>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+
+</body>
+</html>

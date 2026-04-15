@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 2</title>
+    <link rel="stylesheet" href="styles/styles-2.css">
+</head>
+<body>
+    <form action="thanks.html" method="get">
+    <h2>Завдання 11-2: Реєстрація на конференцію</h2>
+    Прізвище: <input type="text" name="fio" size="30" maxlength="30">
+    Пароль для кабінету: <input type="password" name="pass" size="8">
+    
+    <p>Ваш статус: 
+        <input type="radio" name="status" value="student" checked> Студент
+        <input type="radio" name="status" value="teacher"> Викладач
+    </p>
+
+    <p>Секції інтересів: 
+        <input type="checkbox" name="sec1"> ШІ
+        <input type="checkbox" name="sec2"> Кібербезпека
+    </p>
+
+    <p>Ваше місто: 
+        <select name="city">
+            <option>Полтава</option>
+            <option selected>Кременчук</option>
+        </select>
+    </p>
+
+    <p>Тези доповіді: <br>
+    <textarea name="text" cols="40" rows="3"></textarea></p>
+    
+    <p>Завантажити фото: <input type="file" name="photo"></p>
+    
+    <div class="button-group">
+        <input type="submit" value="ВІДПРАВИТИ">
+        <input type="reset" value="СКАСУВАТИ">
+    </div>
+</form>
+</body>
+</html>

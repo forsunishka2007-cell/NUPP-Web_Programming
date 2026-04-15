@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style09-2.css">
+</head>
+<body>
+
+    <h2>Карта зі спливаючими заголовками</h2>
+
+    <div class="card">
+        <map name="map2">
+            <area shape="rect" coords="5,3,1124,610" href="./images/bluesky.jpg" title="Блакитне небо" alt="Небо">
+            <area shape="poly" coords="1408,808,1999,1193,2037,0,1475,5,1385,360" href="./images/rock.jpg" title="Скеля" alt="Скеля">
+            <area shape="circle" coords="430,951,205" href="./images/field.jpg" title="Поле" alt="Поле">
+        </map>
+
+        <img src="./images/waterfall.jpg" usemap="#map2" alt="Пейзаж" id="main-image">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
+
+</body>
+</html>

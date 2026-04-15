@@ -1,0 +1,10 @@
+body {
+    font-family: 'Segoe UI', sans-serif; 
+    background: #fff; 
+    text-align: center; 
+}
+        
+img {
+    border-radius: 10px;
+    border: 2px solid #ccc; 
+}
