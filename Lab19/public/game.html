@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ігрове поле</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <div class="sidebar">
+            <select id="category-select">
+                <option value="animals">Тварини</option>
+                <option value="insects">Комахи</option>
+                <option value="fish">Риби</option>
+            </select>
+            <button id="restart-btn">Почати з початку</button>
+            
+            <div class="current-image-box">
+                <p>Знайди цю картинку:</p>
+                <div id="target-container">
+                    <img id="draggable-img" src="" alt="Ціль">
+                </div>
+            </div>
+        </div>
+
+        <div id="game-grid" class="grid">
+            </div>
+    </div>
+
+    <div id="win-dialog" title="Вітаємо!" style="display:none;">
+        <p>Ви знайшли збіг! Граємо ще раз?</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
