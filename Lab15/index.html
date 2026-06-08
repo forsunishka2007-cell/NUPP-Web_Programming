@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логіка та Цикли: JS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h1>Цикли, умови та модальні вікна</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>1. Прості числа (0 - 100)</h3>
+            <p>Виводить всі прості числа в проміжку від 0 до 100 за допомогою циклу <code>while</code>.</p>
+            <button onclick="runPrimeNumbers()">Вивести числа</button>
+            <div class="result" id="res-primes">Результат з'явиться тут...</div>
+        </div>
+
+        <div class="card">
+            <h3>2. Аналіз чисел (0 - 10)</h3>
+            <p>Виводить числа від 0 до 10 з аналізом (нуль/парне/непарне) за допомогою циклу <code>do...while</code>.</p>
+            <button onclick="runDoWhileAnalysis()">Аналізувати</button>
+            <div class="result" id="res-dowhile">Результат з'явиться тут...</div>
+        </div>
+
+        <div class="card">
+            <h3>3. Ділення 10000 на 2</h3>
+            <p>Ділить число 10000 на 2, поки результат не стане менше 50. Рахує ітерації.</p>
+            <button onclick="runDivisionLoop()">Запустити ділення</button>
+            <div class="result" id="res-division">Результат з'явиться тут...</div>
+        </div>
+
+        <div class="card">
+            <h3>4. Пори року (Modal)</h3>
+            <p>Запитує номер місяця (1-12) через <code>prompt</code> і виводить пору року та назву через <code>alert</code>.</p>
+            <button onclick="runSeasonFinder()">Відкрити prompt</button>
+        </div>
+
+        <div class="card">
+            <h3>5. Конвертер температур</h3>
+            <p>Запитує температуру в °C через <code>prompt</code> та переводить її у Фаренгейти (°F) через <code>alert</code>.</p>
+            <button onclick="runTempConverter()">Конвертувати</button>
+        </div>
+
+        <div class="card">
+            <h3>6. День тижня (Modal + DOM)</h3>
+            <p>Запитує число 1-7 через <code>prompt</code> і виводить назву дня прямо в блок результату нижче.</p>
+            <button onclick="runDayOfWeek()">Визначити день</button>
+            <div class="result" id="res-day">Результат з'явиться тут...</div>
+        </div>
+
+    </div>
+
+    <script src="./scripts.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота: JS + HTML</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h1>Практичні завдання на JavaScript</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>1. Залишок секунд</h3>
+            <p>Функція seconds: повертає залишок від ділення total на 60.</p>
+            <div class="form-group">
+                <label>Введіть total (секунди):</label>
+                <input type="number" id="task1-input" value="125">
+            </div>
+            <button onclick="runTask1()">Обчислити</button>
+            <div class="result" id="task1-result">Результат з'явиться тут...</div>
+        </div>
+
+        <div class="card">
+            <h3>2. Периметр багатокутника</h3>
+            <p>Функція perimeter: рахує периметр за формулою P = n * a.</p>
+            <div class="form-group">
+                <label>Довжина сторони (side):</label>
+                <input type="number" id="task2-side" value="5">
+            </div>
+            <div class="form-group">
+                <label>Кількість сторін (count):</label>
+                <input type="number" id="task2-count" value="4">
+            </div>
+            <button onclick="runTask2()">Обчислити</button>
+            <div class="result" id="task2-result">Результат з'явиться тут...</div>
+        </div>
+
+        <div class="card">
+            <h3>3. FizzBuzz</h3>
+            <p>Виводить числа від 1 до n замінюючи кратні 3 на fizz, 5 на buzz, а ті й ті на fizzbuzz.</p>
+            <div class="form-group">
+                <label>Число n:</label>
+                <input type="number" id="task3-input" value="15">
+            </div>
+            <button onclick="runTask3()">Запустити</button>
+            <div class="result" id="task3-result" style="max-height: 150px; overflow-y: auto;">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>4. Середнє арифметичне</h3>
+            <p>Функція Calculate: рахує середнє трьох чисел.</p>
+            <div class="form-group">
+                <label>Число 1:</label>
+                <input type="number" id="task4-a" value="10">
+            </div>
+            <div class="form-group">
+                <label>Число 2:</label>
+                <input type="number" id="task4-b" value="20">
+            </div>
+            <div class="form-group">
+                <label>Число 3:</label>
+                <input type="number" id="task4-c" value="30">
+            </div>
+            <button onclick="runTask4()">Обчислити</button>
+            <div class="result" id="task4-result">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>5. Кратність числа (isDivisible)</h3>
+            <p>Перевірка чи ділиться n на x та y (3 способами).</p>
+            <div class="form-group">
+                <label>Число n:</label>
+                <input type="number" id="task5-n" value="12">
+            </div>
+            <div class="form-group">
+                <label>Число x:</label>
+                <input type="number" id="task5-x" value="3">
+            </div>
+            <div class="form-group">
+                <label>Число y:</label>
+                <input type="number" id="task5-y" value="4">
+            </div>
+            <button onclick="runTask5()">Перевірити</button>
+            <div class="result" id="task5-result">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>6. Аналіз масиву</h3>
+            <p>Створює масив з N випадкових елементів та шукає min, max, sum, avg та непарні.</p>
+            <div class="form-group">
+                <label>Кількість елементів N:</label>
+                <input type="number" id="task6-n" value="10">
+            </div>
+            <button onclick="runTask6()">Генерувати й аналізувати</button>
+            <div class="result" id="task6-result">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>7. Двовимірний масив 5х5</h3>
+            <p>Заповнює матрицю та змінює значення на головній діагоналі (<0 на 0, >0 на 1).</p>
+            <button onclick="runTask7()">Обробити матрицю</button>
+            <div class="result" id="task7-result" style="font-family: monospace;">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>8. Арифметика (Калькулятор)</h3>
+            <p>Вибір операції над двома числами (з перевіркою ділення на нуль).</p>
+            <div class="form-group">
+                <label>Число 1:</label>
+                <input type="number" id="task8-a" value="10">
+            </div>
+            <div class="form-group">
+                <label>Число 2:</label>
+                <input type="number" id="task8-b" value="0">
+            </div>
+            <div class="form-group">
+                <label>Операція:</label>
+                <select id="task8-op">
+                    <option value="add">Додавання (+)</option>
+                    <option value="sub">Віднімання (-)</option>
+                    <option value="mul">Множення (*)</option>
+                    <option value="div">Ділення (/)</option>
+                </select>
+            </div>
+            <button onclick="runTask8()">Порахувати</button>
+            <div class="result" id="task8-result">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>9. Властивості числа</h3>
+            <p>Визначає знак, простоту числа та кратність до 2, 5, 3, 6, 9.</p>
+            <div class="form-group">
+                <label>Введіть число:</label>
+                <input type="number" id="task9-input" value="30">
+            </div>
+            <button onclick="runTask9()">Аналізувати</button>
+            <div class="result" id="task9-result">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>10. Реверс та квадрати масиву</h3>
+            <p>Перевертає масив, підносить числа до квадрату, інші типи залишає без змін.</p>
+            <div class="form-group">
+                <label>Масив (через кому):</label>
+                <input type="text" id="task10-input" value="1, hello, 3, true, 4">
+            </div>
+            <button onclick="runTask10()">Трансформувати</button>
+            <div class="result" id="task10-result">Результат...</div>
+        </div>
+
+        <div class="card">
+            <h3>11. Видалення дублікатів</h3>
+            <p>Приймає масив і прибирає повторення елементів.</p>
+            <div class="form-group">
+                <label>Масив (через кому):</label>
+                <input type="text" id="task11-input" value="1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6">
+            </div>
+            <button onclick="runTask11()">Очистити</button>
+            <div class="result" id="task11-result">Результат...</div>
+        </div>
+
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

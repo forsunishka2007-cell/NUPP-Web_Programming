@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Квадрат Числа</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="ajax-card">
+        <h2>Обчислення квадрату числа через AJAX</h2>
+        
+        <div class="input-group">
+            <input type="number" id="number-input" placeholder="Введіть будь-яке число..." required>
+        </div>
+        
+        <button onclick="sendAjaxRequest()">Надіслати на сервер</button>
+        
+        <div id="output-box" class="status-output"></div>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

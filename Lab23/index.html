@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додаткові завдання: JS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <h1>Додаткові практичні завдання</h1>
+
+    <div class="wrapper">
+
+        <div class="card">
+            <h2>1. Локалізація та дні тижня (Modal Windows)</h2>
+            <p>
+                Натисніть кнопку нижче, щоб запустити програму. Вона послідовно запитає мову (ua/en) 
+                та номер дня тижня (1-7) через вікна <code>prompt</code>. Якщо дані введені некоректно, 
+                запитання повториться. Регістр літер значення не має.
+            </p>
+            <button onclick="runLanguageApp()">Запустити вікно запиту</button>
+        </div>
+
+        <div class="card oop">
+            <h2>2. Симуляція електромережі міста (ООП)</h2>
+            <p>
+                Налаштуйте параметри інфраструктури міста та ліній електропередач (ЛЕП), щоб вирахувати 
+                енергобаланс, фінансові витрати або прибуток для дня та ночі.
+            </p>
+            
+            <div class="grid-inputs">
+                <div class="form-group">
+                    <label>Потужність ТЕС (1-100 МВт):</label>
+                    <input type="number" id="param-plant" value="10" min="1" max="100">
+                </div>
+                <div class="form-group">
+                    <label>Потужність СЕС (1-5 МВт):</label>
+                    <input type="number" id="param-solar" value="5" min="1" max="5">
+                </div>
+                <div class="form-group">
+                    <label>К-сть квартир у домі (1-400):</label>
+                    <input type="number" id="param-house" value="350" min="1" max="400">
+                </div>
+                <div class="form-group">
+                    <label>Ціна за 1 МВт на ЛЕП (грн):</label>
+                    <input type="number" id="param-price" value="1500">
+                </div>
+            </div>
+
+            <button onclick="runGridSimulation()">Розрахувати енергобаланс</button>
+            <div class="report-box" id="grid-report"></div>
+        </div>
+
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

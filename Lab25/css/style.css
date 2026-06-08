@@ -1,0 +1,286 @@
+/* ==========================================
+   ЗАГАЛЬНІ СУЧАСНІ СТИЛІ (ДЛЯ ОБОХ СТОРІНОК)
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Контейнери-картки для сторінок, щоб код виглядав як дорогий сайт */
+.film-body, .book-body {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Загальні стилі для посилань */
+a {
+    color: #3182ce;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   СТИЛІ ДЛЯ СТОРІНКИ ФІЛЬМУ (film.html)
+   ========================================== */
+.film-body {
+    background-color: #fefcf0; /* Шляхетний, м'який світло-жовтий фон ( Ivory/Cream ) */
+}
+
+/* Головний заголовок фільму */
+.film-body h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.film-body h1 a {
+    color: #1a202c;
+}
+
+.film-body h1 a:hover {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+/* Головна афіша */
+.film-poster {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #2f855a; /* Красивий глибокий зелений колір рамки */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.film-poster:hover {
+    transform: scale(1.02); /* Ефект легкого збільшення при наведенні */
+}
+
+/* Блок з інфо про фільм (додає преміальності) */
+.film-info {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #edf2f7;
+}
+
+.film-info p {
+    text-indent: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Заголовки h2 (Опис, Фото) за вимогами презентації */
+.film-body h2 {
+    font-size: 20px;          /* Суворо 20px */
+    color: #333333;          /* Суворо темно-сірий */
+    text-align: left;        /* Суворо по лівому краю */
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Параграфи за вимогами презентації */
+.film-body p {
+    text-indent: 15px;       /* Суворо абзац 15px */
+    padding-left: 15px;      /* Суворо відступ зліва 15px */
+    color: #4a5568;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Галерея картинок фільму */
+.film-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;               /* Суворо відстань між фото не менше 40px */
+    padding-left: 15px;      /* Відступ зліва для вирівнювання з текстом */
+    margin-top: 20px;
+}
+
+.film-gallery img {
+    width: 320px;            /* Суворо ширина 320px */
+    height: 240px;           /* Суворо висота 240px */
+    border: 3px solid #dd6b20; /* Красивий теракотово-оранжевий колір рамки */
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* Професійний ефект для галереї при наведенні */
+.film-gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(221, 107, 32, 0.2);
+}
+
+
+/* ==========================================
+   СТИЛІ ДЛЯ СТОРІНКИ КНИГИ (book.html)
+   ========================================== */
+.book-body {
+    background-color: #f7fafc; /* Сучасний світлий димчасто-сірий фон */
+}
+
+/* Плашка з інформацією про курсанта */
+.student-info {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border-left: 4px solid #3182ce;
+    padding-left: 10px;
+}
+
+/* Заголовки h4 за вимогами презентації */
+.book-body h4 {
+    font-size: 14px;          /* Суворо 14px */
+    color: #2f855a;          /* Суворо зелений колір */
+    text-align: right;       /* Суворо праворуч */
+    text-decoration: underline; /* Суворо підкреслений */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Параграфи книги за вимогами презентації */
+.book-body p {
+    text-indent: 12px;       /* Суворо абзац 12px */
+    padding-left: 15px;      /* Суворо відступ зліва 15px */
+    color: #4a5568;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Контейнери для флекс-розмітки (Обкладинка + Опис) */
+.book-container, .author-container {
+    display: flex;
+    gap: 30px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    align-items: center;
+}
+
+/* Зображення книги та автора за вимогами */
+.book-img, .author-img {
+    width: 300px;            /* Суворо ширина 300px */
+    height: 400px;           /* Суворо висота 400px */
+    border: 2px solid #744210; /* Суворо коричнева рамка 2px */
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.book-details p {
+    text-indent: 0 !important; /* Прибираємо абзац суто для списку характеристик */
+}
+
+/* Інтерактивні посилання у книзі при наведенні (за вимогами) */
+.book-body a {
+    color: #2b6cb0;
+    font-weight: 500;
+}
+
+.book-body a:hover {
+    color: #e53e3e;          /* Змінює колір (наприклад, на виразний червоний) */
+    text-decoration: none;   /* Втрачає підкреслення */
+}
+
+/* Лінія розмежування блоків за вимогами презентації */
+.divider-line {
+    border-bottom: 5px solid #3182ce; /* Суворо не менше 5px і синього кольору */
+    margin: 40px 0;
+    border-radius: 10px; /* Заокруглення робить лінію акуратною */
+}
+
+/* Заголовок ЗМІСТ за вимогами презентації */
+.toc-title {
+    color: #e53e3e;          /* Суворо червоний колір */
+    text-transform: uppercase; /* Суворо у верхньому регістрі (ВЕЛИКИМИ ЛІТЕРАМИ) */
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+/* Список розділів у змісті */
+.chapters-list {
+    list-style-type: none;
+    padding-left: 15px;
+    margin-bottom: 40px;
+}
+
+.chapters-list li {
+    padding: 10px 15px;
+    background: #ffffff;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border-left: 3px solid #cbd5e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.01);
+}
+
+.chapters-list li:has(a) {
+    border-left-color: #3182ce; /* Виділяємо пункт із посиланням синім кольором */
+}
+
+/* Блок розкритого розділу книги */
+.chapter-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    border: 1px solid #e2e8f0;
+}
+
+.chapter-content h2 {
+    font-size: 1.4rem;
+    color: #1a202c;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #e53e3e;
+}
+
+/* Відступи між параграфами у тексті розділу */
+.chapter-content p {
+    margin-bottom: 15px;     /* Суворо відступ між параграфами 15px */
+}
